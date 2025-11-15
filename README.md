@@ -1,6 +1,6 @@
-# medication_reminder
+# Remrdi App
 
-A new Flutter project.
+A Flutter mobile application for medication management with multi-role support (Adult, Monitor, Child/Elderly). Features include manual medicine entry, scheduling, reminders, and caregiver monitoring capabilities.
 
 ## Getting Started
 
