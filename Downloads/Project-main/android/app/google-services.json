@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "350904435864",
+    "project_id": "remedi-54c75",
+    "storage_bucket": "remedi-54c75.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350904435864:android:2d5e77d13cf5cee46f3ced",
+        "android_client_info": {
+          "package_name": "com.example.medication_reminder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsABCo-DWkhvJrIO7Pr5nZJbKVbNK9tTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
