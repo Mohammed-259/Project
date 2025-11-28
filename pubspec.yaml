@@ -48,9 +48,12 @@ dependencies:
   cloud_firestore: ^6.1.0
   firebase_messaging: ^16.0.4
   connectivity_plus: ^7.0.0
+<<<<<<< HEAD
   flutter_local_notifications: ^17.1.2
   timezone: ^0.9.3
   intl: ^0.19.0
+=======
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
 
 
 

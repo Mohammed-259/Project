@@ -19,7 +19,11 @@ class DatabaseHelper {
     String path = join(await getDatabasesPath(), 'medication_reminder.db');
     return await openDatabase(
       path,
+<<<<<<< HEAD
       version: 8, // 🔥 تحديث الرقم لإضافة جداول الإشعارات
+=======
+      version: 6, // 🔥 تحديث الرقم
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
       onCreate: _createDatabase,
       onUpgrade: _upgradeDatabase,
     );
@@ -73,6 +77,7 @@ class DatabaseHelper {
     await db.execute(
       'CREATE INDEX idx_user_synced ON users(isSynced)',
     ); // 🔥 فهرس جديد
+<<<<<<< HEAD
 
     // 🔔 جداول الإشعارات
     await db.execute('''
@@ -114,6 +119,8 @@ class DatabaseHelper {
     await db.execute('CREATE INDEX idx_notif_medicine ON notification_logs(medicineId)');
     await db.execute('CREATE INDEX idx_notif_scheduled ON notification_logs(scheduledTime)');
     await db.execute('CREATE INDEX idx_notif_pref_user ON notification_preferences(userId)');
+=======
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
   }
 
   Future<void> _upgradeDatabase(
@@ -121,6 +128,7 @@ class DatabaseHelper {
     int oldVersion,
     int newVersion,
   ) async {
+<<<<<<< HEAD
     if (oldVersion < 8) {
       try {
         // Create notification preference table
@@ -176,6 +184,8 @@ class DatabaseHelper {
       }
     }
 
+=======
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
     if (oldVersion < 6) {
       try {
         await db.execute(
@@ -821,6 +831,7 @@ class DatabaseHelper {
       print('Database integrity check failed: $e');
     }
   }
+<<<<<<< HEAD
 
   // ================= 🔔 دوال الإشعارات =================
 
@@ -1110,3 +1121,6 @@ class DatabaseHelper {
   }
 }
 
+=======
+}
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127

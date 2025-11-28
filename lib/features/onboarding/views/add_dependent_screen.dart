@@ -175,7 +175,11 @@ class _AddDependentScreenState extends State<AddDependentScreen> {
         ),
         SizedBox(height: 8.h),
         DropdownButtonFormField<String>(
+<<<<<<< HEAD
           initialValue: _selectedRelationship,
+=======
+          value: _selectedRelationship,
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
           items: _relationships.map((relationship) {
             return DropdownMenuItem(
               value: relationship,

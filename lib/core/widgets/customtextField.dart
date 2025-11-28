@@ -18,8 +18,14 @@ class CustomTextField extends StatefulWidget {
   final Widget? prefixIcon;
   final String? Function(String?)? validator;
 
+<<<<<<< HEAD
   final bool readOnly;
   final VoidCallback? onTap; 
+=======
+  // NEW:
+  final bool readOnly;
+  final VoidCallback? onTap; // tap on the field itself
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
 
   const CustomTextField({
     super.key,

@@ -853,7 +853,11 @@ class _ChildHomeScreenState extends State<ChildHomeScreen> {
       final now = DateTime.now();
       final times = medicine.reminderTimes;
 
+<<<<<<< HEAD
       if (times.isNotEmpty) {
+=======
+      if (times != null && times.isNotEmpty) {
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
         for (final time in times) {
           if (time.isNotEmpty) {
             try {

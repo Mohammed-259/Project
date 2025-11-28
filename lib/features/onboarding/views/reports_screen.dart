@@ -330,7 +330,11 @@ class _ReportsScreenState extends State<ReportsScreen> {
                 ),
               ),
               SizedBox(height: 16.h),
+<<<<<<< HEAD
               SizedBox(
+=======
+              Container(
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
                 width: 120.w,
                 height: 120.h,
                 child: Stack(
@@ -395,7 +399,11 @@ class _ReportsScreenState extends State<ReportsScreen> {
                 style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 16.h),
+<<<<<<< HEAD
               SizedBox(height: 150.h, child: _buildDailyAdherenceChart()),
+=======
+              Container(height: 150.h, child: _buildDailyAdherenceChart()),
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
             ],
           ),
         ),
@@ -612,7 +620,11 @@ class _ReportsScreenState extends State<ReportsScreen> {
             ),
           ),
           SizedBox(height: 16.h),
+<<<<<<< HEAD
           SizedBox(
+=======
+          Container(
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
             height: 200.h,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,

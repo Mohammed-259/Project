@@ -754,7 +754,11 @@ class _MonitorHomeScreenState extends State<MonitorHomeScreen> {
                         value: dependent['name'] as String,
                         child: Text(dependent['name'] as String),
                       );
+<<<<<<< HEAD
                     }),
+=======
+                    }).toList(),
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
                   ],
                   onChanged: (value) {
                     setState(() {
@@ -1231,7 +1235,11 @@ class _MonitorHomeScreenState extends State<MonitorHomeScreen> {
       final now = DateTime.now();
       final times = medicine.reminderTimes;
 
+<<<<<<< HEAD
       if (times.isNotEmpty) {
+=======
+      if (times != null && times.isNotEmpty) {
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
         for (final time in times) {
           if (time.isNotEmpty) {
             try {
@@ -1266,7 +1274,11 @@ class _MonitorHomeScreenState extends State<MonitorHomeScreen> {
             final minute = int.tryParse(timeParts[1]);
 
             if (hour != null && minute != null) {
+<<<<<<< HEAD
               return 'Tomorrow $hour:${minute.toString().padLeft(2, '0')}';
+=======
+              return 'Tomorrow ${hour}:${minute.toString().padLeft(2, '0')}';
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
             }
           }
         } catch (e) {
@@ -1312,7 +1324,11 @@ class _MonitorHomeScreenState extends State<MonitorHomeScreen> {
 
   bool _isMedicineDue(Medicine medicine, DateTime now) {
     final times = medicine.reminderTimes;
+<<<<<<< HEAD
     if (times.isNotEmpty) {
+=======
+    if (times != null && times.isNotEmpty) {
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
       for (final time in times) {
         try {
           final timeParts = time.split(':');

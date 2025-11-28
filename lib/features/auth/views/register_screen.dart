@@ -606,7 +606,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   border: Border.all(color: Colors.grey.shade300),
                 ),
                 child: DropdownButtonFormField<String>(
+<<<<<<< HEAD
                   initialValue: _selectedRole,
+=======
+                  value: _selectedRole,
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
                   items: [
                     DropdownMenuItem(
                       value: 'adult',

@@ -14,7 +14,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
   final Color _accentColor = const Color(0xFF6AC2B0);
 
   // بيانات المستخدم الافتراضية
+<<<<<<< HEAD
   final Map<String, dynamic> _userData = {
+=======
+  Map<String, dynamic> _userData = {
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
     'name': 'Ahmed Mohamed',
     'email': 'ahmed.monitor@remedi.com',
     'phone': '+201234567890',

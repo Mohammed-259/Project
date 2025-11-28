@@ -13,8 +13,11 @@ class Medicine {
   final String? lastTaken;
   final String? nextDoseTime;
   final List<String> reminderTimes;
+<<<<<<< HEAD
   final bool notificationsEnabled;
   final int? lastNotificationTime; // Unix timestamp
+=======
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
 
   Medicine({
     this.id,
@@ -30,8 +33,11 @@ class Medicine {
     this.lastTaken,
     this.nextDoseTime,
     required this.reminderTimes,
+<<<<<<< HEAD
     this.notificationsEnabled = true,
     this.lastNotificationTime,
+=======
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
   });
 
   Map<String, dynamic> toMap() {
@@ -49,8 +55,11 @@ class Medicine {
       'lastTaken': lastTaken,
       'nextDoseTime': nextDoseTime,
       'reminderTimes': reminderTimes.join(','),
+<<<<<<< HEAD
       'notificationsEnabled': notificationsEnabled ? 1 : 0,
       'lastNotificationTime': lastNotificationTime,
+=======
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
     };
   }
 
@@ -69,8 +78,11 @@ class Medicine {
       lastTaken: map['lastTaken'],
       nextDoseTime: map['nextDoseTime'],
       reminderTimes: map['reminderTimes'].toString().split(','),
+<<<<<<< HEAD
       notificationsEnabled: map['notificationsEnabled'] != 0,
       lastNotificationTime: map['lastNotificationTime'],
+=======
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
     );
   }
 }

@@ -11,7 +11,11 @@ class DatabaseDebugScreen extends StatefulWidget {
 
 class _DatabaseDebugScreenState extends State<DatabaseDebugScreen> {
   List<Map<String, dynamic>> _users = [];
+<<<<<<< HEAD
   final List<Map<String, dynamic>> _medicines = [];
+=======
+  List<Map<String, dynamic>> _medicines = [];
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
   bool _isLoading = true;
 
   @override

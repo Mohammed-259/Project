@@ -212,7 +212,11 @@ class _AddMedicineScreenState extends State<AddMedicineScreen> {
         ),
         SizedBox(height: 8.h),
         DropdownButtonFormField<int>(
+<<<<<<< HEAD
           initialValue: _durationDays,
+=======
+          value: _durationDays,
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
           items: [7, 10, 14, 21, 30, 60, 90].map((days) {
             return DropdownMenuItem(value: days, child: Text('$days days'));
           }).toList(),
@@ -249,13 +253,21 @@ class _AddMedicineScreenState extends State<AddMedicineScreen> {
           final time = entry.value;
           return ListTile(
             leading: Icon(Icons.access_time, color: _primaryColor),
+<<<<<<< HEAD
             title: Text(time.format(context)),
+=======
+            title: Text('${time.format(context)}'),
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
             trailing: IconButton(
               icon: Icon(Icons.delete, color: Colors.red),
               onPressed: () => _removeReminderTime(index),
             ),
           );
+<<<<<<< HEAD
         }),
+=======
+        }).toList(),
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
       ],
     );
   }

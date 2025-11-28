@@ -23,8 +23,13 @@ class _UpdatePasswordState extends State<UpdatePassword> {
   final TextEditingController _newPassController = TextEditingController();
   final TextEditingController _confirmPassController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
+<<<<<<< HEAD
   final bool _obscureNewPass = true;
   final bool _obscureConfirmPass = true;
+=======
+  bool _obscureNewPass = true;
+  bool _obscureConfirmPass = true;
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
 
   @override
   void dispose() {

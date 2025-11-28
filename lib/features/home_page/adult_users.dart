@@ -336,8 +336,13 @@ class _AdultHomeScreenState extends State<AdultHomeScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: _navigateToAddMedicine,
         backgroundColor: _primaryColor,
+<<<<<<< HEAD
         tooltip: 'Add Medication',
         child: Icon(Icons.add, color: Colors.white, size: 24.sp),
+=======
+        child: Icon(Icons.add, color: Colors.white, size: 24.sp),
+        tooltip: 'Add Medication',
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
       ),
     );
   }
@@ -836,7 +841,11 @@ class _AdultHomeScreenState extends State<AdultHomeScreen> {
       final now = DateTime.now();
       final times = medicine.reminderTimes;
 
+<<<<<<< HEAD
       if (times.isNotEmpty) {
+=======
+      if (times != null && times.isNotEmpty) {
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
         for (final time in times) {
           if (time.isNotEmpty) {
             try {

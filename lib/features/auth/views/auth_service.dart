@@ -19,7 +19,11 @@ class FirebaseAuthService {
       return userCredential.user;
     } catch (e) {
       print('Firebase Sign Up Error: $e');
+<<<<<<< HEAD
       rethrow;
+=======
+      throw e;
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
     }
   }
 
@@ -35,7 +39,11 @@ class FirebaseAuthService {
       return userCredential.user;
     } catch (e) {
       print('Firebase Sign In Error: $e');
+<<<<<<< HEAD
       rethrow;
+=======
+      throw e;
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
     }
   }
 

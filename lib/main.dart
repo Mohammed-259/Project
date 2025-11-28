@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:firebase_core/firebase_core.dart';
+<<<<<<< HEAD
 import 'firebase_options.dart';
+=======
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
 import 'features/splash/splash_screen.dart';
 import 'features/auth/views/login_screen.dart';
 import 'features/auth/views/register_screen.dart';
@@ -11,16 +14,23 @@ import 'features/home_page/child_user.dart';
 import 'models/user_session.dart';
 import 'models/sqlite.dart';
 import 'models/sync_service.dart';
+<<<<<<< HEAD
 import 'services/notification_service.dart';
 import 'services/medication_scheduler.dart';
+=======
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   try {
+<<<<<<< HEAD
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
+=======
+    await Firebase.initializeApp();
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
     print('✅ Firebase initialized successfully');
   } catch (e) {
     print('❌ Firebase initialization failed: $e');
@@ -33,6 +43,7 @@ void main() async {
     print('❌ Database initialization failed: $e');
   }
 
+<<<<<<< HEAD
   // Initialize notification service
   try {
     await NotificationService().initialize();
@@ -47,6 +58,11 @@ void main() async {
   // Schedule medication reminders (non-blocking)
   _scheduleReminders();
 
+=======
+  // Initialize and start sync service (non-blocking)
+  _initializeSyncService();
+
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
   runApp(const MyApp());
 }
 
@@ -62,6 +78,7 @@ void _initializeSyncService() async {
   }
 }
 
+<<<<<<< HEAD
 // 🔔 Schedule medication reminders
 void _scheduleReminders() async {
   try {
@@ -73,6 +90,8 @@ void _scheduleReminders() async {
   }
 }
 
+=======
+>>>>>>> 2ed123706f65e33f098538d7ddb89a1b0d12b127
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
